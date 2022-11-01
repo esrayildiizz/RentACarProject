@@ -46,7 +46,7 @@ namespace DataAccess.Concrete.InMemory
 
         public void Update(Car car)
         {
-            //Gönderdiğim ürün id'sine sahir olan listedeki ürünü bul demek.
+            //Gönderdiğim araba id'sine eşit olan listedeki arabayı bul demek.
             Car carToUpdate = _cars.SingleOrDefault(p => p.CarId == car.CarId);
 
             //Gönderdiğim araba ıd göre güncelleme işlemi yapmak için gerekli kodlar.
