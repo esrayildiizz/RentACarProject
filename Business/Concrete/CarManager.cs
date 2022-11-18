@@ -21,14 +21,14 @@ namespace Business.Concrete
             return _carDal.GetAll();
         }
 
-        public List<Car> GetCarsByBrandId(int id)
+        public List<Car> GetAllByBrandId(int id)
         {
-            throw new NotImplementedException();
+            return _carDal.GetAll(x => x.BrandId == id);
         }
 
-        public List<Car> GetCarsByColorId(int id)
+        public List<Car> GetAllByColorId(int id)
         {
-            throw new NotImplementedException();
+            return _carDal.GetAll(x => x.ColorId == id);
         }
     }
 }
